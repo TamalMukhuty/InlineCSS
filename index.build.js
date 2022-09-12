@@ -27,7 +27,7 @@ var render = function ()
     }
 };
 
-input.addEventListener('input', render);
+input.addEventListener('change', render);
 Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox]'), 0)
     .forEach(c => c.addEventListener('change', render));
 },{"juice/client":90}],2:[function(require,module,exports){
