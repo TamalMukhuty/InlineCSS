@@ -28,8 +28,8 @@ var render = function ()
     }
 };
 
-// input.addEventListener('change', render);
-submit.addEventListener('submit', render);
+input.addEventListener('submit', render);
+// submit.addEventListener('submit', render);
 Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox]'), 0)
     .forEach(c => c.addEventListener('change', render));
 },{"juice/client":90}],2:[function(require,module,exports){
