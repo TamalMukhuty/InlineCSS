@@ -8,6 +8,7 @@ var juice = require('juice/client');
 var input = document.querySelector('#input');
 var errMessage = document.querySelector('#err');
 var output = document.querySelector('#output');
+var submit = document.querySelector('#submit');
 
 var render = function ()
 {
@@ -27,7 +28,8 @@ var render = function ()
     }
 };
 
-input.addEventListener('change', render);
+// input.addEventListener('change', render);
+submit.addEventListener('submit', render);
 Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox]'), 0)
     .forEach(c => c.addEventListener('change', render));
 },{"juice/client":90}],2:[function(require,module,exports){
