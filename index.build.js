@@ -5,11 +5,11 @@
 
 var juice = require('juice/client');
 
-// var input = document.querySelector('#input');
-	var input = inputhtml;
+var input = document.querySelector('#input');
+	//var input = inputhtml;
 var errMessage = document.querySelector('#err');
-//var output = document.querySelector('#output');
-	var output = outputhtml
+var output = document.querySelector('#output');
+	//var output = outputhtml
 var submit = document.querySelector('#submit');
 
 var render = function ()
